@@ -1,0 +1,86 @@
+body {
+    transition: all 0.5s;
+}
+
+.container {
+    padding: 50px 30px;
+    background-image: linear-gradient(#1e1e1e, #363636, #505050, #6b6b6b, #888888, #a5a5a5);
+    border-radius: 50px;
+    flex-direction: column;
+    width: 6.5%;
+    margin-left: 45%;
+    position: relative;
+    box-shadow: 0 0 15px rgb(22, 22, 22);
+}
+
+.container::after {
+    content: "";
+    height: 344px;
+    width: 30px;
+    position: absolute;
+    background-color: #505050;
+    background-image: linear-gradient(to right, #363636, #888888, #363636);
+    top: 100%;
+    left: 60px;
+    box-shadow: 5px 5px 20px rgb(98, 98, 98);
+}
+
+.container .red {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0px -15px 20px black;
+}
+
+.container .orange {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0px -15px 20px black;
+}
+
+.container .green {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 0px -15px 20px black;
+}
+
+.redd {
+    background-color: red;
+}
+
+.orangee {
+    background-color: orange;
+}
+
+.greenn {
+    background-color: green;
+}
+
+.inner {
+    width: 100px;
+    height: 99px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 26%;
+        margin: auto;
+    }
+}
